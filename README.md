@@ -114,9 +114,15 @@ Nos ponemos a descargar todos los paquetes necesarios para que nuestra web pueda
    - **Métodos de Pago**: Durante el proceso de checkout, los usuarios pueden elegir entre diferentes métodos de pago (por ejemplo, tarjeta de crédito, PayPal).
    - **Confirmación de Pedido**: Una vez realizado el pago, los usuarios reciben una confirmación de pedido con los detalles de su compra.
    - **Notificación de Envío**: Los usuarios son notificados por correo electrónico cuando su pedido ha sido enviado.
+   - **Descargar factura**: Al finalizar el proceso el usuario puede descargar la factura del pedido.
      
    ![Captura de pantalla 2025-03-16 030105](https://github.com/user-attachments/assets/c1c88124-ae52-48be-a13e-1bffc73b7ad7)
    ![Captura de pantalla 2025-03-16 030537](https://github.com/user-attachments/assets/bc47ebd2-1c3b-4ddb-9378-40f4d56535b7)
+   ![image](https://github.com/user-attachments/assets/39ded21d-71d5-4ac5-b874-4657fc61eae1)
+   ![image](https://github.com/user-attachments/assets/89701318-a0f0-4a1d-a510-341924cf9e66)
+   ![image](https://github.com/user-attachments/assets/16308433-49e3-4cfa-b9ca-153a8e3f7d82)
+
+
 
 ### Sección de Administración
 
