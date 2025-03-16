@@ -47,6 +47,8 @@ Esta sección describe paso a paso cómo configurar una instancia EC2 en AWS par
 ![image](https://github.com/user-attachments/assets/89dcf3ac-62c4-434b-8ffb-0d12b930025a)
 ![image](https://github.com/user-attachments/assets/0095b8b0-f4ac-4cc8-8e20-a2a01ca1c140)   
 ![image](https://github.com/user-attachments/assets/8139ccfa-7e91-4ebf-b116-a5b0629aca2c)
+![image](https://github.com/user-attachments/assets/73288a75-12b4-488d-86c3-badd6ee10e80)
+
 
 ### 2. Conexión y Configuración del Servidor
 
