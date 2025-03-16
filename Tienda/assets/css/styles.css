@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+/* Tarjetas de productos */
+.card-product {
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-product .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.product-detail-img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Estilos del carrito */
+.cart-item-img {
+    max-height: 80px;
+    object-fit: contain;
+}
+
+/* Admin panel */
+.admin-card {
+    border-left: 4px solid #0d6efd;
+    transition: transform 0.2s;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+}
+
+.form-image-preview {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Estilos para el sistema de notificaciones */
+.notification-bell {
+    position: relative;
+}
+
+.notification-badge {
+    font-size: 0.6rem;
+    transform: translate(-50%, -50%) !important;
+}
+
+.notification-dropdown-menu {
+    width: 320px;
+    max-height: 400px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.notification-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.notification-item:hover {
+    background-color: #f5f5f5;
+}
+
+.notification-item.unread {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.notification-item .notification-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.notification-item .notification-title {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.notification-item .notification-message {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+/* Página de notificaciones */
+.notification-page-item {
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.notification-page-item.unread {
+    border-left-color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.notification-page-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para las notificaciones toast */
+.toast-container {
+  z-index: 1100;
+}
+
+.toast {
+  opacity: 0.95;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+}
+
+.toast:hover {
+  opacity: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Animación de entrada para el toast */
+@keyframes toast-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.toast {
+  animation: toast-in-right 0.5s;
+}
