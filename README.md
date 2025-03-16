@@ -123,3 +123,93 @@ La tienda tiene dos secciones diferenciadas: **Sección de Usuario** y **Secció
 
 La estructura de archivos del proyecto es la siguiente:
 
+C:.
+│   admin_panel.php
+│   cart.php
+│   checkout.php
+│   database.sql
+│   generate_invoice.php
+│   index.php
+│   login.php
+│   logout.php
+│   notifications.php
+│   orders.php
+│   product.php
+│   README.md
+│   register.php
+│   simulate_status_update.php
+│   tienda.session.sql
+│   tracking.php
+│
+├── .vscode
+│       settings.json
+│
+├── admin
+│       dashboard.php
+│       error.php
+│       notificaciones.php
+│       pedidos.php
+│       pedidos_view.php
+│       productos.php
+│       productos_form.php
+│       productos_search_results.php
+│       usuarios.php
+│       usuarios_form.php
+│
+├── ajax
+│       notifications.php
+│
+├── assets
+│   ├── css
+│   │       styles.css
+│   │
+│   ├── img
+│   │   ├── 1-Logo.PNG
+│   │   └── productos
+│   │           4TB29AA-1_T1679069285.avif
+│   │           651b2494-06d5-4155-9430-5b82c62bd48d-1_14c5190a-71de-4fb8-b727-edf4b820c8a9.avif
+│   │           71Usua70bML.jpg
+│   │           acer_aspire3.png
+│   │           beat1.jpg
+│   │           canon_pixma.jpg
+│   │           default.PNG
+│   │           logitech_k380.jpg
+│   │           logo.PNG
+│   │           mbp14-spaceblack-select-202410.jpeg
+│   │           nvidia_rtx3060.jpg
+│   │           razer_deathadder.jpg
+│   │           samsung_970evo.jpg
+│   │           seagate_2tb.jpg
+│   │
+│   └── js
+│           scripts.js
+│
+├── config
+│       database.php
+│
+├── includes
+│       footer.php
+│       functions.php
+│       header.php
+│
+└── libs
+    └── fpdf
+            fpdf.css
+            fpdf.php
+            └── font
+                    courier.php
+                    courierb.php
+                    courierbi.php
+                    courieri.php
+                    helvetica.php
+                    helveticab.php
+                    helveticabi.php
+                    helveticai.php
+                    symbol.php
+                    times.php
+                    timesb.php
+                    timesbi.php
+                    timesi.php
+                    zapfdingbats.php
+
+
