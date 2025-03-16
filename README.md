@@ -17,6 +17,49 @@ La tienda tiene dos secciones diferenciadas: **Sección de Usuario** y **Secció
 - **JavaScript**: Para la interactividad en el frontend, como la funcionalidad del carrito de compras, la validación de formularios y la interacción dinámica con el servidor.
 - **Modelo MVC**: Se utiliza para organizar el código en tres capas: Modelo (gestión de datos), Vista (interfaz de usuario) y Controlador (gestión de la lógica de la aplicación).
 
+## Montaje y Despliegue en AWS
+
+Esta sección describe paso a paso cómo configurar una instancia EC2 en AWS para desplegar la aplicación de la Tienda de Componentes Informáticos. Se recomienda capturar cada paso para facilitar la replicación del proceso.
+
+### 1. Creación y Configuración de la Instancia EC2
+
+#### 1.1. Acceso a la Consola de AWS
+- **Paso:** Inicia sesión en la [Consola de AWS](https://aws.amazon.com/console/).
+
+#### 1.2. Lanzar una Nueva Instancia
+- **Paso:**  
+  1. En el panel de EC2, haz clic en **Launch Instance o lanzar instancia**.  
+  2. Selecciona una AMI, por ejemplo, **Ubuntu Server 20.04 LTS**.  
+  3. Elige el tipo de instancia, como **t2.micro** (ideal para pruebas y desarrollo).
+  
+#### 1.3. Creación y Descarga del Par de Claves
+- **Paso:**  
+  1. Al finalizar la configuración, crea un par de claves (archivo `.pem`).  
+  2. Descarga y guarda este archivo en un lugar seguro, ya que lo necesitarás para conectarte vía SSH.
+     
+#### 1.4. Configurar el Grupo de Seguridad
+- **Paso:**  
+  1. Crea o selecciona un grupo de seguridad que permita tráfico en:
+     - **SSH (22):** Para conexiones remotas.
+     - **HTTP (80):** Para acceso web.
+     - **HTTPS (443):** (Opcional) Para conexiones seguras.
+
+![image](https://github.com/user-attachments/assets/89dcf3ac-62c4-434b-8ffb-0d12b930025a)
+![image](https://github.com/user-attachments/assets/0095b8b0-f4ac-4cc8-8e20-a2a01ca1c140)   
+![image](https://github.com/user-attachments/assets/8139ccfa-7e91-4ebf-b116-a5b0629aca2c)
+
+### 2. Conexión y Configuración del Servidor
+
+#### 2.1. Conexión a la Instancia vía SSH
+- **Paso:** Abre una terminal y utiliza el siguiente comando (reemplaza `ruta/a/tu/clave.pem` e `ip-publica`):
+
+  ```bash
+  ssh -i "ruta/a/tu/clave.pem" ubuntu@ip-publica
+   ```
+  ![image](https://github.com/user-attachments/assets/23afec5a-f93c-4d83-b417-69c4ab334b61)
+
+Nos ponemos a descargar todos los paquetes necesarios para que nuestra web pueda ser funcional en el servidor e implementamos nuestra web en el directorio ***/var/www/html***
+
 ## Funcionalidad
 
 ### Sección de Usuario
@@ -25,9 +68,11 @@ La tienda tiene dos secciones diferenciadas: **Sección de Usuario** y **Secció
    - **Vista de Productos**: Los usuarios pueden ver un listado de productos con su imagen, nombre, descripción breve y opciones para añadir al carrito o ver más detalles.
    - **Barra de Búsqueda**: Los usuarios pueden buscar productos por nombre, categoría o características.
    - **Filtrado por Categorías**: Los productos se organizan en categorías, facilitando la navegación.
-
-   ![image](https://github.com/user-attachments/assets/0bbbb427-c57f-4e4b-890b-5e66dcd47cbd)
-   ![image](https://github.com/user-attachments/assets/18a50995-55b8-461a-ae39-d76823adacc0)
+     
+   ![image](https://github.com/user-attachments/assets/6aaed8bb-56b8-44a4-b701-ae24cd7e4607)
+   ![image](https://github.com/user-attachments/assets/31cf87c0-e50d-4598-a2d7-a70e7595ca3d)
+   ![image](https://github.com/user-attachments/assets/63fa297b-923a-4dc1-9056-a35840ce093d)
+![image](https://github.com/user-attachments/assets/01036c27-bd38-46e5-91c1-c0046853284c)
 
 
 #### 2. **Ficha de Producto**
