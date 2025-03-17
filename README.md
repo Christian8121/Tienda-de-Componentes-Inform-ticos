@@ -175,7 +175,7 @@ Nos ponemos a descargar todos los paquetes necesarios para que nuestra web pueda
 ## Estructura del Proyecto
 
 La estructura de archivos del proyecto es la siguiente:
-
+```text
 C:.
 │   admin_panel.php
 │   cart.php
@@ -264,9 +264,10 @@ C:.
                     timesbi.php
                     timesi.php
                     zapfdingbats.php
+```
 
 ## Mi dominio
 ```bash
 http://sevestore.zapto.org/
-
+```
 
